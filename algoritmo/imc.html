@@ -13,6 +13,9 @@
         p{
             color: red;
         }
+        script{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +25,49 @@
         var peso = Number(window.prompt('Digite seu peso em KG'));
         var altura = Number(window.prompt('Digite sua altura'));
         var imc = (peso / (altura*altura));
-        document.write('Seu IMC é ' + imc + '!');
+
+        if (imc < 18.5)
+        {
+            document.write('Seu IMC é: ' + imc + '!');
+            document.write("<br>");
+            document.write('Você está abaixo do peso!')
+        }
+        
+        else if (imc < 24.9)
+        {
+            document.write('Seu IMC é: ' + imc + '!');
+            document.write("<br>");
+            document.write('Você está com o peso normal!')
+        }
+
+        else if (imc < 29.9)
+        {
+            document.write('Seu IMC é: ' + imc + '!');
+            document.write("<br>");
+            document.write('Você está com sobrepeso!')
+        }
+
+        else if(imc < 34.9)
+        {
+            document.write('Seu IMC é: ' + imc + '!');
+            document.write("<br>");
+            document.write('Você está com obesidade grau 1!')
+        }
+
+        else if(imc < 39.9)
+        {
+            document.write('Seu IMC é: ' + imc + '!');
+            document.write("<br>");
+            document.write('Você está com obesidade grau 2!')
+        }
+
+        else
+        {
+            document.write('Seu IMC é: ' + imc + '!');
+            document.write("<br>");
+            document.write('Você está com obesidade grau 3!')
+        }
+
     </script>
 
     <p>Sou apaixonado em você</p>
