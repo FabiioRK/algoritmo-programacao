@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu IMC</title>
+    <style>
+        body{
+            background-color: rgb(85, 15, 150);
+            color: white;
+            font: normal 20px Arial;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <script>
+        var peso = Number(window.prompt('Digite seu peso em KG'));
+        var altura = Number(window.prompt('Digite sua altura'));
+        var imc = (peso / (altura*altura));
+        document.write('Seu IMC é ' + imc + '!');
+    </script>
+
+    <p>Sou apaixonado em você</p>
+</body>
+</html>
